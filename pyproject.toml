@@ -1,0 +1,21 @@
+[project]
+name = "cage"
+version = "0.1.0"
+description = "Cage: a private, local-first dashboard for your life, money, health, projects and a paper-trading research agent. Works with SPIKE."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = ["cryptography>=42"]
+
+[project.optional-dependencies]
+wallet = ["solders>=0.21", "mnemonic>=0.21", "base58>=2.1"]
+research = ["numpy>=1.26", "scikit-learn>=1.4", "scipy>=1.11"]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 120

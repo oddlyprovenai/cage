@@ -1,0 +1,7 @@
+#!/bin/bash
+# Cage.app: starts the panel if it is off (user service org.cage.server) and opens it in the browser.
+# The first time it carries the one-time setup code so you can create your password.
+PORT="${CAGE_PORT:-8787}"; U="http://127.0.0.1:$PORT"; T="$HOME/.cage/setup-token"
+curl -s --noproxy '*' -o /dev/null "$U/api/state" || launchctl kickstart "gui/$(id -u)/org.cage.server"
+for i in $(seq 1 30); do curl -s --noproxy '*' -o /dev/null "$U/api/state" && break; sleep 0.3; done
+if [ -f "$T" ]; then open "$U/#setup=$(cat "$T")"; else open "$U/"; fi

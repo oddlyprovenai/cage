@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Cage</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/app.css">
+<script src="/charts.js" defer></script>
+<script src="/engine.js" defer></script>
+<script src="/app.js" defer></script>
+<script src="/prov.js" defer></script>
+<script src="/life.js" defer></script>
+<script src="/life-money.js" defer></script>
+<script src="/life-health.js" defer></script>
+<script src="/assistant.js" defer></script>
+<script src="/invest.js" defer></script>
+<script src="/progress.js" defer></script>
+<script src="/review.js" defer></script>
+<script src="/tools.js" defer></script>
+<script src="/motion.js" defer></script>
+<script src="/icons.js" defer></script>
+<script src="/trading.js" defer></script>
+<script src="/trading-real.js" defer></script>
+<script src="/longterm.js" defer></script>
+<script src="/results.js" defer></script>
+<script src="/news.js" defer></script>
+<script src="/dexui.js" defer></script>
+<script src="/allocui.js" defer></script>
+<script src="/mail.js" defer></script>
+<script src="/lifeui.js" defer></script>
+<script src="/system.js" defer></script>
+<script src="/brief.js" defer></script>
+<script src="/docs.js" defer></script>
+<script src="/projstatus.js" defer></script>
+<script src="/memoryui.js" defer></script>
+<script src="/bench.js" defer></script>
+<script src="/connect.js" defer></script>
+<script src="/guide.js" defer></script>
+</head>
+<body>
+<div id="gate" class="gate" hidden></div>
+<div id="app" class="shell" hidden>
+  <header class="top">
+    <div class="brand pill"><img class="logo" src="/logo.svg" alt=""><b>Cage</b></div>
+    <nav class="tabs pill" id="tabs" aria-label="Sections">
+      <span class="tab-ind" id="tabInd"></span>
+    </nav>
+    <div class="tools pill">
+      <button class="ico help-btn" id="btnHelp" title="Guide (?)" aria-label="Guide"></button>
+      <button class="ico" id="btnSpend" title="Quick expense (g)" aria-label="Quick expense"></button>
+      <button class="ico" id="btnAdd" title="Quick add (n)" aria-label="Quick add"></button>
+      <button class="ico" id="btnSearch" title="Search (⌘K)" aria-label="Search"></button>
+      <button class="ico" id="btnBell" title="Notifications" aria-label="Notifications"><i class="dot" id="bellDot" hidden></i></button>
+      <button class="ico" id="btnClock" title="Auto-lock" aria-label="Auto-lock"></button>
+    </div>
+    <button class="user pill" id="btnUser"><span class="avatar" id="userAv">Y</span><span class="ut"><b id="userName">you</b><small id="userSub">Local and encrypted dashboard</small></span></button>
+  </header>
+  <aside class="rail">
+    <div class="rail-grp pill" id="themeGrp">
+      <button class="ico" data-theme-set="light" title="Light mode" aria-label="Light mode"></button>
+      <button class="ico" data-theme-set="dark" title="Dark mode" aria-label="Dark mode"></button>
+    </div>
+    <div class="rail-grp rail-dark" id="projRail" aria-label="Projects"></div>
+    <div class="rail-grp pill">
+      <button class="ico" id="btnLock" title="Lock" aria-label="Lock"></button>
+      <button class="ico" id="btnLogout" title="Log out" aria-label="Log out"></button>
+    </div>
+  </aside>
+  <main id="view" class="view"></main>
+</div>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" hidden></div>
+</body>
+</html>
