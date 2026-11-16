@@ -33,6 +33,14 @@ Fresh install, demo user "Maria", no data connected yet.
 | **Benchmark** (SPIKE's published results) | **Connect** |
 | ![Benchmark](docs/screenshots/benchmark.png) | ![Connect](docs/screenshots/connect.png) |
 
+## 30-second intro
+
+<p align="center"><a href="docs/media/cage-short.mp4"><img src="docs/media/cage-short-preview.gif" width="240" alt="Cage intro short (preview)"></a></p>
+
+<p align="center"><a href="docs/media/cage-short.mp4">Watch the full 30-second video (MP4, 2.3 MB)</a>.
+Music: "Mischief Maker" by Kevin MacLeod (incompetech.com), licensed under
+<a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
 ## What's inside
 
 | Tab | What it does |
